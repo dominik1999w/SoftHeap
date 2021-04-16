@@ -4,7 +4,7 @@
 
 #include <vector>
 
-class kth_element_utils {
+class KthElementUtils {
 public:
     static int findPartition(std::vector<int> &A, int l, int r, int pivot);
     static int medianOfMediansSelect(std::vector<int> &A, int l, int r, int k);

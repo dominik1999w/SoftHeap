@@ -1,7 +1,7 @@
 #include <algorithm>
-#include "kth_element_utils.h"
+#include "KthElementUtils.h"
 
-int kth_element_utils::medianOfMediansSelect(std::vector<int> &A, int l, int r, int k) {
+int KthElementUtils::medianOfMediansSelect(std::vector<int> &A, int l, int r, int k) {
     int n = r - l;
     if (n < 10) {
         std::sort(A.begin() + l, A.begin() + r);
@@ -34,7 +34,7 @@ int kth_element_utils::medianOfMediansSelect(std::vector<int> &A, int l, int r, 
     return medianOfMediansSelect(A, threshold, r, k - (threshold - l));
 }
 
-int kth_element_utils::findPartition(std::vector<int> &A, int l, int r, int pivot) {
+int KthElementUtils::findPartition(std::vector<int> &A, int l, int r, int pivot) {
     int i = l;
     while (i <= r) {
         if (A[i] < pivot) {

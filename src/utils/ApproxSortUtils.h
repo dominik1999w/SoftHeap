@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class approx_sort_utils {
+class ApproxSortUtils {
 private:
     static long long countInversions(std::vector<int> &A, int l, int r);
 

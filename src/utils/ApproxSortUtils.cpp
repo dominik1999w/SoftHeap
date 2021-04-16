@@ -1,10 +1,10 @@
-#include "approx_sort_utils.h"
+#include "ApproxSortUtils.h"
 
-long long approx_sort_utils::countInversions(std::vector<int> A) {
+long long ApproxSortUtils::countInversions(std::vector<int> A) {
     return countInversions(A, 0, static_cast<int>(A.size() - 1));
 }
 
-long long approx_sort_utils::countInversions(std::vector<int> &A, int l, int r) {
+long long ApproxSortUtils::countInversions(std::vector<int> &A, int l, int r) {
     long long inversions = 0;
     if (l < r) {
         int s = l + (r - l) / 2;
@@ -15,7 +15,7 @@ long long approx_sort_utils::countInversions(std::vector<int> &A, int l, int r) 
     return inversions;
 }
 
-long long approx_sort_utils::merge(std::vector<int> &A, int l, int r, int s) {
+long long ApproxSortUtils::merge(std::vector<int> &A, int l, int r, int s) {
     long long inversions = 0;
     int l_size = s - l + 1;
     int r_size = r - s;

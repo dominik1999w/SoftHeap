@@ -36,8 +36,8 @@ set(files
         src/SoftSequenceHeap/SequenceNode.cpp
         )
 
-add_executable(ApproxSortGenerator src/approx_sort_generator.cpp ${files} src/utils/approx_sort_utils.cpp)
-add_executable(KthElementGenerator src/kth_element_generator.cpp ${files} src/utils/kth_element_utils.cpp)
+add_executable(ApproxSortGenerator src/ApproxSortGenerator.cpp ${files} src/utils/ApproxSortUtils.cpp)
+add_executable(KthElementGenerator src/KthElementGenerator.cpp ${files} src/utils/KthElementUtils.cpp)
 
 
 # TESTS

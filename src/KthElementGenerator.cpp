@@ -5,7 +5,7 @@
 #include <numeric>
 #include <algorithm>
 #include <random>
-#include "utils/kth_element_utils.h"
+#include "utils/KthElementUtils.h"
 #include "SoftHeap/SoftHeap.h"
 #include "SoftSequenceHeap/SequenceNode.h"
 #include "KaplanSoftHeap/TreeNode.h"
@@ -31,7 +31,7 @@ int softHeapSelect(std::vector<int> &A, int l, int r, int k, double epsilon) {
         pivot = tmp > pivot ? tmp : pivot;
     }
 
-    int threshold = kth_element_utils::findPartition(A, l, r - 1, pivot);
+    int threshold = KthElementUtils::findPartition(A, l, r - 1, pivot);
 
     if (k < threshold - l + 1) {
         return softHeapSelect<T>(A, l, threshold, k, epsilon);
@@ -74,7 +74,7 @@ void measureExecutionTime(int N, const std::string &heapType) {
             std::chrono::duration<double> duration1(stop1 - start1);
 
             auto start2 = std::chrono::high_resolution_clock::now();
-            int element2 = kth_element_utils::medianOfMediansSelect(permutation2, 0, n, k);
+            int element2 = KthElementUtils::medianOfMediansSelect(permutation2, 0, n, k);
             auto stop2 = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double> duration2(stop2 - start2);
 

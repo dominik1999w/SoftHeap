@@ -6,7 +6,7 @@
 #include <fstream>
 #include <chrono>
 #include "SoftHeap/SoftHeap.h"
-#include "utils/approx_sort_utils.h"
+#include "utils/ApproxSortUtils.h"
 #include "KaplanSoftHeap/TreeNode.h"
 #include "SoftSequenceHeap/SequenceNode.h"
 
@@ -91,7 +91,7 @@ void measureInversions(int N, const std::string &heapType) {
 
             std::vector<int> res = approxSorting<T>(n, epsilon);
 
-            f_inversions << n << padding << approx_sort_utils::countInversions(res) << std::endl;
+            f_inversions << n << padding << ApproxSortUtils::countInversions(res) << std::endl;
         }
     }
 }
