@@ -20,7 +20,7 @@ Dwa niezależne podejścia sprowadziłem do implementacji, które różnią się
 Poprawność kodu poparłem testami (pliki z sufiksem `Test`).
 
 Do przetestowania praktycznych zastosowań stworzyłem następujące mechanizmy:
-1. klasa `ApproxSortGenerator`, która implementuje algorytm sortowania aproksymacyjnego z użyciem obu wariantów miękkich kopców. Generuje ona trzy rodzaje danych użytych do analizy w części teoretycznej (pliki w folderze `data`: `*_approx_sort_deviation.txt` , `*_approx_sort_inversions_epsilon.txt`, `_approx_sort_time_epsilon.txt`).
+1. klasa `ApproxSortGenerator`, która implementuje algorytm sortowania aproksymacyjnego z użyciem obu wariantów miękkich kopców. Generuje ona trzy rodzaje danych użytych do analizy w części teoretycznej (pliki w folderze `data`: `*_approx_sort_deviation.txt` , `*_approx_sort_inversions_epsilon.txt`, `*_approx_sort_time_epsilon.txt`).
 2. klasa `KthElementGenerator`, która implementuje algorytm wyboru k-tego co do wielkości elementu z zadanej permutacji. Generuje ona pliki postaci `*_kth_element_time_epsilon.txt`.
 
 
