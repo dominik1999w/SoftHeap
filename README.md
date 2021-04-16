@@ -14,6 +14,7 @@ Część implementacyjna pracy analizującej różne podejścia miękkich kopcó
 Do przetestowania praktycznych zastosowań stworzyłem następujące mechanizmy:
 1. klasa `ApproxSortGenerator`, która implementuje algorytm sortowania aproksymacyjnego z użyciem obu wariantów miękkich kopców. Generuje ona trzy rodzaje danych użytych do analizy w części teoretycznej (pliki w folderze `data` to gotowe wygenerowane dane (generacja trwa dość długo): `[wersja kopca]_approx_sort_deviation.txt` , `[wersja kopca]_approx_sort_inversions_*.txt`, `[wersja kopca]_approx_sort_time_*.txt`).
 2. klasa `KthElementGenerator`, która implementuje algorytm wyboru k-tego co do wielkości elementu z zadanej permutacji. Generuje ona pliki postaci `[wersja kopca]_kth_element_time_*.txt`.
+
 Każdy plik zawiera dane dostosowane do wygenerowania wykresów w popularnych narzędziach (osobiście korzystałem z `gnuplot`). W pierwszej linii każdego pliku znajduje się opisu formatu danych.
 
 ## Struktura + UML
